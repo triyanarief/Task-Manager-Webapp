@@ -1,6 +1,6 @@
 {{outlet}}
 <h1>Tasks</h1>
-{{#each task in model}}
+{{#each models as |task|}}
 	<div class="well">
 		<h4>{{#link-to 'tasks.edit' task.id}}{{task.title}}{{/link-to}}</h4>
 		<small>Due: {{format-date task.date}}</small>

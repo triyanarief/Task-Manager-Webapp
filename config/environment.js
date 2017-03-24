@@ -7,7 +7,7 @@ module.exports = function(environment) {
     environment: environment,
     contentSecurityPolicy: {'connect-src': "'self' wss://*.firebaseio.com"},
     firebase: {
-      apiKey: 'AIzaSyDrf-NEjZseJgm0GuPxQLs2s7DCDyExqbs',
+      apiKey: 'xyz',
       authDomain: 'taskmanager-5a858.firebaseapp.com',
       databaseURL: 'https://taskmanager-5a858.firebaseio.com',
       storageBucket: 'gs://taskmanager-5a858.appspot.com/',
