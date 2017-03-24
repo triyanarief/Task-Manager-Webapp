@@ -1,9 +1,17 @@
 /* eslint-env node */
 
 module.exports = function(environment) {
+
   var ENV = {
     modulePrefix: 'task-manager-webapp',
     environment: environment,
+    contentSecurityPolicy: {'connect-src': "'self' wss://*.firebaseio.com"},
+    firebase: {
+      apiKey: 'AIzaSyDrf-NEjZseJgm0GuPxQLs2s7DCDyExqbs',
+      authDomain: 'taskmanager-5a858.firebaseapp.com',
+      databaseURL: 'https://taskmanager-5a858.firebaseio.com',
+      storageBucket: 'gs://taskmanager-5a858.appspot.com/',
+    },
     rootURL: '/',
     locationType: 'auto',
     EmberENV: {
@@ -33,6 +41,7 @@ module.exports = function(environment) {
 
   if (environment === 'test') {
     // Testem prefers this...
+    ENV.rootURL = '/';
     ENV.locationType = 'none';
 
     // keep test console output quieter
